@@ -1,0 +1,75 @@
+.slider-container {
+    position: relative;
+}
+
+.slider-container .slick-slide {
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-container .slick-slide:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.slider-container .group:hover img {
+    filter: blur(2px); /* Blur effect on hover */
+}
+
+.slider-container .absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Ensures the background matches slider's gradient */
+}
+/* Add this to your CSS file */
+@keyframes text-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .animate-text {
+    display: inline-block;
+    position: relative;
+    opacity: 0;
+    animation: text-fade-in 1s forwards;
+  }
+  
+  .animate-text::before {
+    content: attr(data-text);
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    color: transparent;
+    background: linear-gradient(90deg, transparent, currentColor);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  
+  .animate-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: currentColor;
+    white-space: nowrap;
+    opacity: 0;
+    animation: text-fade-in 1s steps(30, end) forwards;
+  }
+  
+  p {
+    overflow: hidden;
+  }
+  
+  .animate-text {
+    display: inline-block;
+    animation: text-fade-in 2s ease-out forwards;
+    white-space: nowrap;
+  }
+  
