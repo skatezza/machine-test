@@ -1,7 +1,7 @@
 
 import FifthSection from './pages/FifthSection'
 import FirstSection from './pages/FirstSection'
-// import FooterSection from './pages/FooterSection'
+import FooterSection from './pages/FooterSection'
 import ForthSection from './pages/ForthSection'
 import NavBar from './pages/NavBar'
 import SecondSection from './pages/SecondSection'
@@ -20,7 +20,7 @@ function App() {
           <ForthSection/>
           <FifthSection/>
           <SixthSection/>
-          {/* <FooterSection/> */}
+          <FooterSection/>
         </div>
     </>
   )

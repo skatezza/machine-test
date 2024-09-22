@@ -150,108 +150,108 @@ const FifthSection = () => {
 
   return (
     <div className="bg-black w-full relative">
-      <div className="flex justify-center h-96  relative shadow-2xl z-20 overflow-visible">
-        <div className="mt-40">
-          <h1 className="text-white text-[35px] ml-7 font-semibold">
-            Loved by thousands of people
-          </h1>
-          <h4 className="text-white text-[20px] font-semibold">
-            Here's what some of our users have to say about Aceternity UI.
-          </h4>
-        </div>
+    <div className="flex justify-center h-96 relative shadow-2xl z-20 overflow-visible">
+      <div className="mt-40 text-center">
+        <h1 className="text-white text-[2.5rem] md:text-[3rem] font-semibold">
+          Loved by thousands of people
+        </h1>
+        <h4 className="text-white text-[1.25rem] md:text-[1.5rem] font-semibold">
+          Here's what some of our users have to say about Aceternity UI.
+        </h4>
       </div>
-
-      <div className="p-5 w-full flex relative shadow-2xl shadow-stone-950 z-20">
-        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black to-transparent z-10" />
-
-        <div className="w-2/6 relative">
-          <Slider {...settings}>
-            {cardsData.map((card, index) => (
-              <div key={index} className="p-4">
-                <div className="relative z-10">
-                  <div className="absolute inset-0 rounded-2xl shadow-lg bg-[#18181B] -z-10"></div>
-                  <div className="bg-[#18181B] border border-gray-800 rounded-2xl p-6 flex flex-col items-start w-full">
-                    <div className="flex items-center gap-1">
-                      <img
-                        src={card.image}
-                        alt={card.title}
-                        className="w-12 h-12 rounded-full mb-4"
-                      />
-                      <div className="mb-4">
-                        <h2 className="text-lg text-white font-bold mb-1">
-                          {card.title}
-                        </h2>
-                        <p className="text-white mt-[-3px]">{card.userName}</p>
-                      </div>
-                    </div>
-                    <p className="text-white text-start">{card.description}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </Slider>
-        </div>
-
-        <div className="w-2/6 relative">
-          <Slider {...settings2}>
-            {cardsData.map((card, index) => (
-              <div key={index} className="p-4">
-                <div className="relative z-10">
-                  <div className="absolute inset-0 rounded-2xl shadow-lg bg-[#18181B] -z-10"></div>
-                  <div className="bg-[#18181B] border border-gray-800 rounded-2xl p-6 flex flex-col items-start w-full">
-                    <div className="flex items-center gap-1">
-                      <img
-                        src={card.image}
-                        alt={card.title}
-                        className="w-12 h-12 rounded-full mb-4"
-                      />
-                      <div className="mb-4">
-                        <h2 className="text-lg text-white font-bold mb-1">
-                          {card.title}
-                        </h2>
-                        <p className="text-white mt-[-3px]">{card.userName}</p>
-                      </div>
-                    </div>
-                    <p className="text-white text-start">{card.description}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </Slider>
-        </div>
-
-        <div className="w-2/6 relative">
-          <Slider {...settings}>
-            {cardsData.map((card, index) => (
-              <div key={index} className="p-4">
-                <div className="relative z-10">
-                  <div className="absolute inset-0 rounded-2xl shadow-lg bg-[#18181B] -z-10"></div>
-                  <div className="bg-[#18181B] border border-gray-800 rounded-2xl p-6 flex flex-col items-start w-full">
-                    <div className="flex items-center gap-1">
-                      <img
-                        src={card.image}
-                        alt={card.title}
-                        className="w-12 h-12 rounded-full mb-4"
-                      />
-                      <div className="mb-4">
-                        <h2 className="text-lg text-white font-bold mb-1">
-                          {card.title}
-                        </h2>
-                        <p className="text-white mt-[-3px]">{card.userName}</p>
-                      </div>
-                    </div>
-                    <p className="text-white text-start">{card.description}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </Slider>
-        </div>
-
-        <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-black to-transparent z-10" />
-      </div>
-      
     </div>
+  
+    <div className="p-5 w-full flex relative shadow-2xl shadow-stone-950 z-20">
+      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black to-transparent z-10" />
+  
+      <div className="w-full md:w-2/6 relative">
+        <Slider {...settings}>
+          {cardsData.map((card, index) => (
+            <div key={index} className="p-4">
+              <div className="relative z-10">
+                <div className="absolute inset-0 rounded-2xl shadow-lg bg-[#18181B] -z-10"></div>
+                <div className="bg-[#18181B] border border-gray-800 rounded-2xl p-6 flex flex-col items-start w-full">
+                  <div className="flex items-center gap-1">
+                    <img
+                      src={card.image}
+                      alt={card.title}
+                      className="w-12 h-12 rounded-full mb-4"
+                    />
+                    <div className="mb-4">
+                      <h2 className="text-lg text-white font-bold mb-1">
+                        {card.title}
+                      </h2>
+                      <p className="text-white mt-[-3px]">{card.userName}</p>
+                    </div>
+                  </div>
+                  <p className="text-white text-start">{card.description}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
+  
+      <div className="w-full md:w-2/6 relative">
+        <Slider {...settings2}>
+          {cardsData.map((card, index) => (
+            <div key={index} className="p-4">
+              <div className="relative z-10">
+                <div className="absolute inset-0 rounded-2xl shadow-lg bg-[#18181B] -z-10"></div>
+                <div className="bg-[#18181B] border border-gray-800 rounded-2xl p-6 flex flex-col items-start w-full">
+                  <div className="flex items-center gap-1">
+                    <img
+                      src={card.image}
+                      alt={card.title}
+                      className="w-12 h-12 rounded-full mb-4"
+                    />
+                    <div className="mb-4">
+                      <h2 className="text-lg text-white font-bold mb-1">
+                        {card.title}
+                      </h2>
+                      <p className="text-white mt-[-3px]">{card.userName}</p>
+                    </div>
+                  </div>
+                  <p className="text-white text-start">{card.description}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
+  
+      <div className="w-full md:w-2/6 relative">
+        <Slider {...settings}>
+          {cardsData.map((card, index) => (
+            <div key={index} className="p-4">
+              <div className="relative z-10">
+                <div className="absolute inset-0 rounded-2xl shadow-lg bg-[#18181B] -z-10"></div>
+                <div className="bg-[#18181B] border border-gray-800 rounded-2xl p-6 flex flex-col items-start w-full">
+                  <div className="flex items-center gap-1">
+                    <img
+                      src={card.image}
+                      alt={card.title}
+                      className="w-12 h-12 rounded-full mb-4"
+                    />
+                    <div className="mb-4">
+                      <h2 className="text-lg text-white font-bold mb-1">
+                        {card.title}
+                      </h2>
+                      <p className="text-white mt-[-3px]">{card.userName}</p>
+                    </div>
+                  </div>
+                  <p className="text-white text-start">{card.description}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
+  
+      <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-black to-transparent z-10" />
+    </div>
+  </div>
+  
   );
 };
 

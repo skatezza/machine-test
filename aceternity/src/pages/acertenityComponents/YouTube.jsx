@@ -9,7 +9,6 @@ const YouTube = ({ image, text, gradientColor }) => {
           background: `linear-gradient(to bottom, ${gradientColor} 65%, white 100%)`,
         }}
       >
-        {/* Image Section */}
         <div className="p-6 w-full md:w-1/2 flex-shrink-0">
           <img
             src={image}
@@ -18,7 +17,6 @@ const YouTube = ({ image, text, gradientColor }) => {
           />
         </div>
 
-        {/* Text Section */}
         <div className="flex-grow">
           <h1 className="text-[24px] md:text-[30px] lg:text-[34px] text-white p-4 md:p-6 font-semibold">
             {text}
