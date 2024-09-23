@@ -17,7 +17,6 @@ const FirstSection = () => {
         matters—building standout websites that captivate your audience.
       </p>
 
-      {/* Buttons */}
       <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
         <button className="bg-white text-sm font-semibold text-black py-2.5 px-7 rounded-md hover:bg-gray-200">
           Explore Collection
