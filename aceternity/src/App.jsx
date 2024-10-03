@@ -1,8 +1,7 @@
-
 import FifthSection from './pages/FifthSection'
 import FirstSection from './pages/FirstSection'
 import FooterSection from './pages/FooterSection'
-import ForthSection from './pages/ForthSection'
+import FourthSection from './pages/FourthSection'
 import NavBar from './pages/NavBar'
 import SecondSection from './pages/SecondSection'
 import SixthSection from './pages/SixthSection'
@@ -17,7 +16,7 @@ function App() {
           <FirstSection/>
           <SecondSection/>
           <ThirdSection/>
-          <ForthSection/>
+          <FourthSection/>
           <FifthSection/>
           <SixthSection/>
           <FooterSection/>

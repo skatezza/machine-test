@@ -1,0 +1,93 @@
+# Agency boilerplate project
+
+## Project overview
+This project is focused on developing a reusable boilerplate for the Agency landing page template.
+
+## Project goals
+Our goals for this project include:
+- Centralizing all the copywriting of the website + image assets referrencing in a single copy-config.ts file, which you'll help create 
+- Replacing all the copywriting + image assets in the website with the ones in the copy-config.ts file
+
+## instructions
+- You will create the copy-config.ts file in the src/app/copy directory
+- You will use the copy-config.ts file to update the landing page copy + image assets referrencing in the website
+
+## Code quality and standards
+- We aim to keep the code minimal across all sections
+- Emphasis on maintaining highly reusable sections
+
+## Project structure
+
+.
+├── README.md
+├── bun.lockb
+├── eslint.config.js
+├── index.html
+├── instructions.txt
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── public
+│   ├── logo-dark.webp
+│   ├── packs card
+│   │   ├── bento-grids.webp
+│   │   ├── blog-content-sections.webp
+│   │   ├── blog-sections.webp
+│   │   ├── features-section.webp
+│   │   ├── hero-sections.webp
+│   │   └── logo-clouds.webp
+│   ├── seondSection
+│   │   ├── 1.webp
+│   │   ├── 10.webp
+│   │   ├── 11.webp
+│   │   ├── 3.webp
+│   │   ├── 4.webp
+│   │   ├── 6.webp
+│   │   ├── 7.webp
+│   │   └── 9.webp
+│   ├── tamplats
+│   │   ├── ai-saas-1.webp
+│   │   ├── ai-saas-2.webp
+│   │   ├── ai-saas.webp
+│   │   ├── startup-1.webp
+│   │   ├── startup-2.webp
+│   │   └── startup-3.webp
+│   ├── vite.svg
+│   └── youtube
+│       ├── download (1).jpeg
+│       ├── download (2).jpeg
+│       ├── download (3).jpeg
+│       ├── download.jpeg
+│       ├── images (1).jpeg
+│       ├── images (2).jpeg
+│       └── images.jpeg
+├── src
+│   ├── App.css
+│   ├── App.jsx
+│   ├── assets
+│   │   └── react.svg
+│   ├── index.css
+│   ├── main.jsx
+│   ├── pages
+│   │   ├── FifthSection.jsx
+│   │   ├── FirstSection.jsx
+│   │   ├── FooterSection.jsx
+│   │   ├── ForthSection.jsx
+│   │   ├── NavBar.jsx
+│   │   ├── SecondSection.jsx
+│   │   ├── SixthSection.jsx
+│   │   ├── ThirdSection.jsx
+│   │   ├── acertenityComponents
+│   │   │   ├── Card.jsx
+│   │   │   ├── CardConfig.jsx
+│   │   │   ├── FooterText.jsx
+│   │   │   ├── MainText.jsx
+│   │   │   ├── MainTextSpark.jsx
+│   │   │   └── YouTube.jsx
+│   │   ├── fifthSection.css
+│   │   └── thirdSection.css
+│   └── utils.jsx
+├── tailwind.config.js
+└── vite.config.js
+
+10 directories, 61 files

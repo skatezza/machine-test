@@ -2,28 +2,35 @@ import React from "react";
 import { FaReact } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss, SiFramer } from "react-icons/si";
 import { Cover } from "./acertenityComponents/MainText";
+import { copyConfig } from '../app/copy/copy-config';
 
 const FirstSection = () => {
+  const { firstSection } = copyConfig;
+
   return (
-    <div className="bg-black text-white min-h-screen w-full flex flex-col  border-b border-gray-800 items-center justify-center px-4 sm:px-8 md:px-16 lg:px-24">
- 
+    <div className="bg-black text-white min-h-screen w-full flex flex-col border-b border-gray-800 items-center justify-center px-4 sm:px-8 md:px-16 lg:px-24">
       <h1 className="text-4xl md:text-4xl lg:text-6xl font-bold max-w-7xl mx-auto text-center mt-36 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white">
-        Build world Class <br /> websites at <Cover>warp speed</Cover>
+        {firstSection.title.main} <br /> 
+        <Cover>{firstSection.title.highlight}</Cover>
       </h1>
 
       <p className="text-lg md:text-xl font-semibold mt-4 md:mt-7 text-gray-200 mb-6 text-center">
-        Access an ever-growing collection of premium, meticulously crafted
-        templates and component packs. Save time and focus on what
-        matters—building standout websites that captivate your audience.
+        {firstSection.subtitle}
       </p>
 
       <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-        <button className="bg-white text-sm font-semibold text-black py-2.5 px-7 rounded-md hover:bg-gray-200">
-          Explore Collection
-        </button>
-        <button className="bg-[#262627] text-sm font-semibold py-2.5 px-6 rounded-md transform hover:translate-y-[-4px] transition-transform duration-300">
-          Unlock Unlimited Access
-        </button>
+        {firstSection.buttons.map((button, index) => (
+          <button
+            key={index}
+            className={`${
+              button.primary
+                ? "bg-white text-black"
+                : "bg-[#262627] text-white"
+            } text-sm font-semibold py-2.5 px-7 rounded-md hover:bg-gray-200`}
+          >
+            {button.label}
+          </button>
+        ))}
       </div>
 
       <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8 py-8">
@@ -99,22 +106,15 @@ const FirstSection = () => {
         </div>
 
         <div className="flex flex-wrap gap-6 md:gap-8 mt-6">
-          <div className="text-[#737373] flex items-center space-x-2">
-            <SiNextdotjs className="text-[#737373] w-7 h-7" />
-            <span>Next.js</span>
-          </div>
-          <div className="text-[#737373] flex items-center space-x-2">
-            <FaReact className="text-[#737373] w-7 h-7" />
-            <span>React</span>
-          </div>
-          <div className="text-[#737373] flex items-center space-x-2">
-            <SiTailwindcss className="text-[#737373] w-7 h-7" />
-            <span>Tailwind CSS</span>
-          </div>
-          <div className="text-[#737373] flex items-center   space-x-2">
-            <SiFramer className="text-[#737373] w-7 h-7" />
-            <span>Framer Motion</span>
-          </div>
+          {firstSection.technologies.map((tech, index) => (
+            <div key={index} className="text-[#737373] flex items-center space-x-2">
+              {tech.icon === "SiNextdotjs" && <SiNextdotjs className="text-[#737373] w-7 h-7" />}
+              {tech.icon === "FaReact" && <FaReact className="text-[#737373] w-7 h-7" />}
+              {tech.icon === "SiTailwindcss" && <SiTailwindcss className="text-[#737373] w-7 h-7" />}
+              {tech.icon === "SiFramer" && <SiFramer className="text-[#737373] w-7 h-7" />}
+              <span>{tech.name}</span>
+            </div>
+          ))}
         </div>
       </div>
     </div>
