@@ -127,10 +127,29 @@ export const copyConfig = {
 
   // Sixth Section
   sixthSection: {
-    // Add content for the sixth section if available
+    title: "Frequently Asked Questions",
+    subtitle: "Everything you need to know about the product and billing.",
+    faqs: [
+      {
+        question: "Is there a free trial available?",
+        answer:
+          "Yes, you can try us for free for 30 days. If you want, we'll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.",
+      },
+      {
+        question: "Can I change my plan later?",
+        answer:
+          "Yes! You can upgrade or downgrade your plan at any time. If you upgrade, the change will be applied immediately. If you downgrade, the change will be applied at the start of the next billing cycle.",
+      },
+      {
+        question: "What is your cancellation policy?",
+        answer:
+          "We understand that needs change. You can cancel your subscription at any time, and you won't be charged for the following month. We don't offer refunds for partial months.",
+      },
+      // Add more FAQs as needed
+    ],
   },
 
-  // Footer Section
+  // Footer Section (expanded)
   footerSection: {
     columns: [
       {
@@ -155,7 +174,24 @@ export const copyConfig = {
           "Stats Sections",
         ],
       },
-      // Add more columns here...
+      {
+        title: "Resources",
+        items: ["Documentation", "Tutorials", "Blog", "Changelog", "Support"],
+      },
+      {
+        title: "Company",
+        items: ["About Us", "Careers", "Press", "Partners", "Contact Us"],
+      },
+      {
+        title: "Legal",
+        items: ["Terms of Service", "Privacy Policy", "Cookie Policy", "GDPR"],
+      },
     ],
+    socialLinks: [
+      { name: "Twitter", icon: "FaTwitter", url: "#" },
+      { name: "GitHub", icon: "FaGithub", url: "#" },
+      { name: "LinkedIn", icon: "FaLinkedin", url: "#" },
+    ],
+    copyright: "© 2024 OhMyDev!, Inc. All Rights Reserved.",
   },
 };
